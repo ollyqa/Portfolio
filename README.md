@@ -6,3 +6,4 @@
 5. SQL testing with MySQL
 6. Test cases in Excel, TestLink and TestRail
 7. Test plans in Microsoft Word
+8. Sertificates and CV
