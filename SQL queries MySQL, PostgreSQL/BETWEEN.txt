@@ -22,3 +22,19 @@ WHERE calories BETWEEN 270 AND 340;
 SELECT title, publish_year
 FROM book
 WHERE publish_year BETWEEN 2011 AND 2015;
+
+
+/* Find the number (sum) of pages of books published each year from 2011 to 2015 inclusive. Sort the result by year of publication in descending order.
+The result is presented in the form:
+first column - year;
+second column - number_of_pages. */
+
+SELECT publish_year AS year, SUM(number_of_pages) AS number_of_pages
+FROM book
+WHERE publish_year BETWEEN 2011 AND 2015
+GROUP BY publish_year
+ORDER BY publish_year DESC;
+
+
+
+
