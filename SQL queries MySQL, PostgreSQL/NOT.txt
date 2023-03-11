@@ -1,0 +1,9 @@
+/* Find all movies which are not started with T letter and wasn't released between 2017 and 2019 years */
+SELECT *
+FROM movie
+WHERE title NOT LIKE 'T%' AND year NOT BETWEEN 2017 AND 2019;
+
+/* Find all movies which country is not USA, SPAIN, China and not released between 2017 and 2019 years */
+SELECT *
+FROM movie
+WHERE release_country NOT IN ('USA, 'Spain', 'Ukraine') AND year NOT BETWEEN 2017 AND 2019;
