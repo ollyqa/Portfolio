@@ -1,0 +1,63 @@
+/* All movies 2015 of year */
+SELECT *
+FROM movie
+WHERE year = 2015;
+
+/* All movies with English language */
+SELECT *
+FROM movie
+WHERE language = 'English';
+
+/* All movies without 2019 year */
+SELECT *
+FROM movie
+WHERE year != 2019;
+
+/* All movies without 2015 year */
+SELECT *
+FROM movie
+WHERE NOT year = 2015;
+
+/* All movies including 2014 and less years */
+SELECT *
+FROM movie
+WHERE year <= 2014;
+
+/* All movies including 2017 and more years */
+SELECT *
+FROM movie
+WHERE year >= 2017;
+
+/* All movies with LADY BIRD and titles with alphabetically increasing */
+SELECT *
+FROM movie
+WHERE title >= 'LADY BIRD';
+
+/* All movies with alphabetically increasing titles after LADY BIRD title */
+SELECT *
+FROM movie
+WHERE title > 'LADY BIRD';
+
+/* All movies with alphabetically decreasing titles before LADY BIRD title */
+SELECT *
+FROM movie
+WHERE title < 'LADY BIRD';
+
+/* All movies in 2017 and USA */
+SELECT *
+FROM movie
+WHERE year = 2017 AND release_country = 'USA';
+
+
+/* All movies in 2015 or 2016 or 2019  */
+SELECT *
+FROM movie
+WHERE year = 2015 OR year = 2016 OR year = 2019;
+
+/* Ukrainian or USA movies of 2015 year */
+SELECT *
+FROM movie
+WHERE year = 2015 AND (release_country = 'Ukraine' OR release_country = 'USA');
+
+
+
